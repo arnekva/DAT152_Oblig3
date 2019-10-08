@@ -1,6 +1,6 @@
 body{
-  background-color: #00043d;
-  color: #ff8400;
+  background-color: #ffffff;
+  color: #1c1c1c;
   font-size:2.7rem;
   font-family: sans-serif;
 }
@@ -38,13 +38,10 @@ body{
   font-size:2.5rem;
   font-weight:500;
   margin-top:-100px !important;
-  color:#f5e000;
   margin-bottom:100px;
 }
 #rom{
-  color: #ffc824;
 }
 #running{
   margin-top:100px;
-  color: #f5e000;
 }
