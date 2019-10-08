@@ -205,7 +205,11 @@ body
 {
 margin: 0;
 padding: 0;
-
+overflow-x:hidden;
+}
+.main-container{
+  overflow-x:hidden;
+  min-height:800px;
 }
 
 a
@@ -236,7 +240,7 @@ z-index: 1;
 user-select: none;
 }
 nav{
-  height:100px;
+  height:100px !important;
 }
 #menuToggle input
 {
