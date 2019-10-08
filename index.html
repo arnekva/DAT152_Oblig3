@@ -12,7 +12,7 @@
 .mainheader{
   min-width:300px;
   padding:40px;
-  background:rgba(245, 209, 66, 0.75) ;
+  background:rgba(245, 209, 66, 0.89) ;
   margin-right:300px;
   margin-left:300px;
 border-radius:40px;
@@ -69,7 +69,36 @@ label{
 }
 .main-container{
   overflow-x:hidden;
+  min-height:800px;
 }
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #212121;
+  color: white;
+  text-align:center;
+  clear: both;
+    position: relative;
+    height: 200px;
+    margin-top: 200px;
+}
+.col{
+  width:25%;
+  position:relative;
+}
+.left{
+  float:left;
+}
+.right{
+  float:right;
+
+}
+.center{
+  margin-right:auto;
+  margin-left:auto;
+}
+
     </style>
 </head>
 <script>
@@ -132,6 +161,19 @@ console.log("hei")
     </div>
 
 </div>
+<footer class="footer">
+  <div class="col right">
+      <span>Heisann! Right</span>
+  </div>
+<div class="col left">
+  <span>Heisann! Left</span>
 </div>
+<div class="col center">
+    <span>Heisann! Center</span>
+</div>
+
+</footer>
+</div>
+
 </body>
 </html>
