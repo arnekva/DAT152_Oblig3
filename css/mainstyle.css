@@ -3,6 +3,11 @@ body{
   margin:0;
   height:100%;
   width:100%;
+   background: url("../img/bg-road.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 nav{
   background-color: #292929;
@@ -21,6 +26,12 @@ nav{
   text-decoration: none;
   margin-left:20px;
   padding:20px;
+
+}
+.mainheader{
+  text-align:center;
+  font-size:3.5rem;
+
 }
 .col2{
   margin-top:40px;
@@ -111,7 +122,9 @@ z-index: 1;
 -webkit-user-select: none;
 user-select: none;
 }
-
+nav{
+  height:100px;
+}
 #menuToggle input
 {
 display: block;
@@ -227,5 +240,17 @@ font-size: 22px;
 {
 transform: none;
 }
+.header-container{
 
+}
+.mainheader{
+  padding:10px;
+  font-size:2rem;
+  min-width:150px !important;
+  max-width:150px !important;
+  background-color:rgb(245, 209, 66,0.6) ;
+  margin-right:auto !important;
+  margin-left:auto !important;
+border-radius:40px;
+}
 }
