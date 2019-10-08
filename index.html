@@ -2,16 +2,56 @@
 
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <title>Hvilket rom</title>
+    <title>Hjem | Løvstakken Bilutleie</title>
     <meta charset="utf-8" />
 
   <link rel="stylesheet" href="css/mainstyle.css">
     <style>
-
+    body{
+      margin:0;
+      height:100%;
+      width:100%;
+    }
+    nav{
+      background-color: #292929;
+      height:170px;
+      margin: 0;
+    }
+    .container{
+      height:100%;
+    }
+    .nav-link{
+      font-size:1.5rem;
+      color:#d6d6d6;
+      text-decoration: none;
+      margin-left:20px;
+      padding:20px;
+    }
+    .col2{
+      margin-top:40px;
+      height:50px;
+    }
+    .nav-link:hover{
+      color:white;
+      text-decoration: none;
+      background-color: #fcd703;
+      border-radius: 10px;
+    }
     </style>
 </head>
 
 <body>
+  <nav class="navbar">
+    <div class="col1"><img src="img/logo.png" alt="bedriftens logo"> <span class="lang"></span> <!-- DIVIDER --> <button class="button"onclick="save()">Logg inn</button><b</div>
+    <div class="col2">
+      <a class="nav-link" href="#">TESTLINK</a>
+      <a class="nav-link" href="#">TESTLINK</a>
+      <a class="nav-link" href="#">TESTLINK</a>
+      <a class="nav-link" href="#">TESTLINK</a>
+      <a class="nav-link" href="#">TESTLINK</a>
+
+    </div>
+  </nav>
   <div class="container">
     <h2 class="mainheader">Løvstakken Bilutleie</h2>
     <div class="error-msg"id="error"></div>
@@ -24,8 +64,5 @@
 <div id="testDiv" style="display:none"></div>
 
 </div>
-<input class="mylink" id="timeedit-link"type="text" />
-<button class="button"onclick="save()">Lagre</button>
 </body>
-<script src="js/rom.js"></script>
 </html>
