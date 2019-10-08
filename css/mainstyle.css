@@ -1,18 +1,25 @@
+body, html{
+    margin:0;
+    padding:0;
+}
 body{
     font-family: "Avenir Next", "Avenir", sans-serif;
   margin:0;
   height:100%;
-  width:100%;
+  width:100% !important;
    background: url("../img/bg-road.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  margin-right:0!important;
+  overflow-x: hidden !important;
 }
 nav{
   background-color: #292929;
   height:60;
   margin: 0;
+
 }
 .logo{
   float:right;
@@ -41,7 +48,7 @@ nav{
   color:white;
   text-decoration: none;
 }
-@media only screen and (min-width: 801px) {
+@media only screen and (min-width: 931px) {
   .logo{
     margin-top:40px;
     margin-right:40px;
@@ -63,7 +70,7 @@ ul{
   list-style-type: none;
   margin: 0;
 padding: 0;
-overflow: hidden;
+
 }
 li {
 float: left !important;
@@ -85,9 +92,19 @@ display:none;
 height:180px;
 }
 .navlink{}
+  .datoinput{
+    width:30% !important;
+    margin-left:50px !important;
+
+  }
+  .input-for-date{
+    width:40%;
+
+  }
 }
 
-@media screen and (max-width: 800px) {
+
+@media screen and (max-width: 930px) {
 body
 {
 margin: 0;
@@ -252,5 +269,22 @@ transform: none;
   margin-right:auto !important;
   margin-left:auto !important;
 border-radius:40px;
+}
+.pickupTime{
+  width:100%!important;
+  float:none;
+
+}
+.datoinput{
+  width:100% !important;
+  margin-left: 0 !important;
+
+
+}label{
+  display:block;
+  width:80px;
+}
+.input-for-date{
+  width:100% !important;
 }
 }
