@@ -21,6 +21,9 @@ nav{
   margin: 0;
 
 }
+body.enlarged {
+  font-size: 2em;
+}
 .logo{
   float:right;
 }
