@@ -17,7 +17,7 @@ console.log("hei")
 <body>
   <div class="main-container">
   <nav class="navbar" role="navigation">
-    <a href="hjem.html" title="Hovedside"><img class="logo" src="img/logo_new_2.png" style="height:100px;width:auto;" alt="Logo for Nitro Bilutleie"></a>
+    <a href="hjem.html" title="Hovedside"><img class="logo" src="img/logo_new_2.png" style="height:100px;width:auto;" alt="Logo for Nitro Bilutleie" title="Logo"></a>
   <div id="menuToggle">
 
     <input type="checkbox" class="menu-box-check"/>
@@ -30,55 +30,34 @@ console.log("hei")
       <a class="nav-link" href="index.html" title="Hovedside"><li>Hjem</li></a>
       <a class="nav-link" href="carguide.html" title="Liste av biler"><li>Biler</li></a>
       <a class="nav-link" href="#" title="Informasjon om oss"><li>Info</li></a>
-      <a class="nav-link" href="#"title="Vår kontaktinformasjon"><li>Kontakt</li></a>
+      <a class="nav-link" href="#" title="Kontaktinformasjon"><li>Kontakt</li></a>
     </ul>
   </div>
 </nav>
 
   <div class="container">
     <div class="header-container">
-    <h2 class="mainheader" role="Overskrift for nettside">Nitro Bilutleie</h2>
+    <h1 class="mainheader" role="Overskrift for nettside">Nitro Bilutleie</h1>
     </div>
     <div class="form-container">
-      <form action="/action_page.php">
-        <label for="fornavn">Fornavn</label>
-        <input type="text" id="fname" name="fornavn" placeholder="Fornavn...">
+    <p class="maintext">
+      <h2>Vi er Vestlandets største bilutleier.</h2>
+      <p>Eventyret startet i 1978 i et garasjeanlegg på Kronstad i Bergen. Vi har vokst opp til å bli en av Norges største utleiere av personbiler, og har ingen planer om å gi oss!</p>
+      <h2
 
-        <label for="etternavn">Etternavn</label>
-        <input type="text" id="lname" name="etternavn" placeholder="Etternavn...">
-
-        <label for="Fylke">Fylke</label>
-        <select id="fylke" name="Fylke">
-          <option value="Norge">Rogaland</option>
-          <option value="Sverige">Hordaland</option>
-          <option value="USA">Sogn og Fjordane</option>
-        </select>
-        <div class="pickupTime">
-        <label class="labelclass"for="dato">Henting</label>
-        <input class="datoinput" type="text" id="date" name="Dato" placeholder="Hentes (dato)">
-        <select class="input-for-date" name="pickupTime"><option value="00:00">00:00</option><option value="00:30">00:30</option><option value="01:00">01:00</option><option value="01:30">01:30</option><option value="02:00">02:00</option><option value="02:30">02:30</option><option value="03:00">03:00</option><option value="03:30">03:30</option><option value="04:00">04:00</option><option value="04:30">04:30</option><option value="05:00">05:00</option><option value="05:30">05:30</option><option value="06:00">06:00</option><option value="06:30">06:30</option><option value="07:00">07:00</option><option value="07:30">07:30</option><option value="08:00">08:00</option><option value="08:30">08:30</option><option value="09:00">09:00</option><option value="09:30">09:30</option><option value="10:00">10:00</option><option value="10:30">10:30</option><option value="11:00">11:00</option><option value="11:30">11:30</option><option value="12:00">12:00</option><option value="12:30">12:30</option><option value="13:00">13:00</option><option value="13:30">13:30</option><option selected="selected" value="14:00">14:00</option><option value="14:30">14:30</option><option value="15:00">15:00</option><option value="15:30">15:30</option><option value="16:00">16:00</option><option value="16:30">16:30</option><option value="17:00">17:00</option><option value="17:30">17:30</option><option value="18:00">18:00</option><option value="18:30">18:30</option><option value="19:00">19:00</option><option value="19:30">19:30</option><option value="20:00">20:00</option><option value="20:30">20:30</option><option value="21:00">21:00</option><option value="21:30">21:30</option><option value="22:00">22:00</option><option value="22:30">22:30</option><option value="23:00">23:00</option><option value="23:30">23:30</option></select>
-        </div>
-          <div class="pickupTime">
-
-        <label for="datoreturn">Tilbakelevering</label>
-        <input class="datoinput" type="text" id="date" name="datoreturn" placeholder="Leveres tilbake (dato)">
-        <select class="input-for-date" name="pickupTime"><option value="00:00">00:00</option><option value="00:30">00:30</option><option value="01:00">01:00</option><option value="01:30">01:30</option><option value="02:00">02:00</option><option value="02:30">02:30</option><option value="03:00">03:00</option><option value="03:30">03:30</option><option value="04:00">04:00</option><option value="04:30">04:30</option><option value="05:00">05:00</option><option value="05:30">05:30</option><option value="06:00">06:00</option><option value="06:30">06:30</option><option value="07:00">07:00</option><option value="07:30">07:30</option><option value="08:00">08:00</option><option value="08:30">08:30</option><option value="09:00">09:00</option><option value="09:30">09:30</option><option value="10:00">10:00</option><option value="10:30">10:30</option><option value="11:00">11:00</option><option value="11:30">11:30</option><option value="12:00">12:00</option><option value="12:30">12:30</option><option value="13:00">13:00</option><option value="13:30">13:30</option><option selected="selected" value="14:00">14:00</option><option value="14:30">14:30</option><option value="15:00">15:00</option><option value="15:30">15:30</option><option value="16:00">16:00</option><option value="16:30">16:30</option><option value="17:00">17:00</option><option value="17:30">17:30</option><option value="18:00">18:00</option><option value="18:30">18:30</option><option value="19:00">19:00</option><option value="19:30">19:30</option><option value="20:00">20:00</option><option value="20:30">20:30</option><option value="21:00">21:00</option><option value="21:30">21:30</option><option value="22:00">22:00</option><option value="22:30">22:30</option><option value="23:00">23:00</option><option value="23:30">23:30</option></select>
-      </div>
-
-        <input type="submit" value="Bestill">
-      </form>
+    </p>
     </div>
 
 </div>
 <footer class="footer">
   <div class="col right">
-      <span>Heisann! Right</span>
+      <span class="center-me-vertically">© Nitro Bilutleie 2019</span>
   </div>
 <div class="col left">
-  <span>Heisann! Left</span>
+  <span class="center-me-vertically">Ring oss for booking: 45454646</span>
 </div>
 <div class="col center">
-    <span>Heisann! Center</span>
+    <span class="center-me-vertically">E-post: <a class="epost-link"href="mailto:webmaster@nitro.no">webmaster@nitro.no</a></span>
 </div>
 
 </footer>
