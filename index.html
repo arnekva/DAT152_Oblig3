@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-    <html lang="nb">
+<html lang="nb">
 <head>
-
     <title>Hjem | Nitro Bilutleie</title>
-    <meta name="language" content="Norwegian">
+    <meta charset="utf-8" />
 
   <link rel="stylesheet" href="css/mainstyle.css">
   <script src="js/bilLaster.js"></script>
@@ -12,13 +11,17 @@
 
     </style>
 </head>
+<script>
+console.log("hei")
+</script>
+<script></script>
 <body>
   <div class="main-container">
-  <nav class="navbar">
+  <nav class="navbar" role="navigation">
     <a href="hjem.html" title="Hovedside"><img class="logo" src="img/logo_new_2.png" style="height:100px;width:auto;" alt="Logo for Nitro Bilutleie" title="Logo"></a>
   <div id="menuToggle">
-    <label for="meny" display="hidden">Meny
-    <input type="checkbox" id="meny" aria-label="lukk meny" class="menu-box-check" value="lukk meny"/></label>
+
+    <input type="checkbox" title="menyknapp" class="menu-box-check"/>
 
     <span></span>
     <span></span>
@@ -39,30 +42,29 @@
     </div>
     <div class="form-container">
       <form action="/action_page.php">
-        <label for="fname">Fornavn
-        <input type="text" id="fname" name="fornavn" placeholder="Fornavn..."></label>
+        <label for="fname">Fornavn</label>
+        <input type="text" id="fname" name="fornavn" placeholder="Fornavn...">
 
-        <label for="lname">Etternavn
-        <input type="text" id="lname" name="etternavn" placeholder="Etternavn..."></label>
+        <label for="lname">Etternavn</label>
+        <input type="text" id="lname" name="etternavn" placeholder="Etternavn...">
 
-        <label for="fylke">Fylke
+        <label for="fylke">Fylke</label>
         <select id="fylke" name="Fylke">
           <option value="Norge">Rogaland</option>
           <option value="Sverige">Hordaland</option>
           <option value="USA">Sogn og Fjordane</option>
-        </select></label>
+        </select>
         <div class="pickupTime">
-        <label class="labelclass" for="datoHent">Henting
-        <input class="datoinput" type="text" id="datoHent" name="datoHent" placeholder="Hentes (dato)"></label>
-        <label class="labelclass" for="datechooser1">Velg tid
-        <select class="input-for-date" id="datechooser1"name="pickupTime"><option value="00:00">00:00</option><option value="00:30">00:30</option><option value="01:00">01:00</option><option value="01:30">01:30</option><option value="02:00">02:00</option><option value="02:30">02:30</option><option value="03:00">03:00</option><option value="03:30">03:30</option><option value="04:00">04:00</option><option value="04:30">04:30</option><option value="05:00">05:00</option><option value="05:30">05:30</option><option value="06:00">06:00</option><option value="06:30">06:30</option><option value="07:00">07:00</option><option value="07:30">07:30</option><option value="08:00">08:00</option><option value="08:30">08:30</option><option value="09:00">09:00</option><option value="09:30">09:30</option><option value="10:00">10:00</option><option value="10:30">10:30</option><option value="11:00">11:00</option><option value="11:30">11:30</option><option value="12:00">12:00</option><option value="12:30">12:30</option><option value="13:00">13:00</option><option value="13:30">13:30</option><option selected="selected" value="14:00">14:00</option><option value="14:30">14:30</option><option value="15:00">15:00</option><option value="15:30">15:30</option><option value="16:00">16:00</option><option value="16:30">16:30</option><option value="17:00">17:00</option><option value="17:30">17:30</option><option value="18:00">18:00</option><option value="18:30">18:30</option><option value="19:00">19:00</option><option value="19:30">19:30</option><option value="20:00">20:00</option><option value="20:30">20:30</option><option value="21:00">21:00</option><option value="21:30">21:30</option><option value="22:00">22:00</option><option value="22:30">22:30</option><option value="23:00">23:00</option><option value="23:30">23:30</option></select>
-      </label </div>
+        <label class="labelclass"for="dato">Henting</label>
+        <input class="datoinput" title="hentedato"type="text" id="date" name="Dato" placeholder="Hentes (dato)">
+        <select class="input-for-date" title="klokkeslett"name="pickupTime"><option value="00:00">00:00</option><option value="00:30">00:30</option><option value="01:00">01:00</option><option value="01:30">01:30</option><option value="02:00">02:00</option><option value="02:30">02:30</option><option value="03:00">03:00</option><option value="03:30">03:30</option><option value="04:00">04:00</option><option value="04:30">04:30</option><option value="05:00">05:00</option><option value="05:30">05:30</option><option value="06:00">06:00</option><option value="06:30">06:30</option><option value="07:00">07:00</option><option value="07:30">07:30</option><option value="08:00">08:00</option><option value="08:30">08:30</option><option value="09:00">09:00</option><option value="09:30">09:30</option><option value="10:00">10:00</option><option value="10:30">10:30</option><option value="11:00">11:00</option><option value="11:30">11:30</option><option value="12:00">12:00</option><option value="12:30">12:30</option><option value="13:00">13:00</option><option value="13:30">13:30</option><option selected="selected" value="14:00">14:00</option><option value="14:30">14:30</option><option value="15:00">15:00</option><option value="15:30">15:30</option><option value="16:00">16:00</option><option value="16:30">16:30</option><option value="17:00">17:00</option><option value="17:30">17:30</option><option value="18:00">18:00</option><option value="18:30">18:30</option><option value="19:00">19:00</option><option value="19:30">19:30</option><option value="20:00">20:00</option><option value="20:30">20:30</option><option value="21:00">21:00</option><option value="21:30">21:30</option><option value="22:00">22:00</option><option value="22:30">22:30</option><option value="23:00">23:00</option><option value="23:30">23:30</option></select>
+        </div>
           <div class="pickupTime">
 
-        <label for="datoreturn">Tilbakelevering
-        <input class="datoinput" type="text" id="datoreturn" name="datoreturn" placeholder="Leveres tilbake (dato)"></label>
-        <label for="datechooser2">Velg tid<select id="datechooser2" class="input-for-date" name="pickupTime"><option value="00:00">00:00</option><option value="00:30">00:30</option><option value="01:00">01:00</option><option value="01:30">01:30</option><option value="02:00">02:00</option><option value="02:30">02:30</option><option value="03:00">03:00</option><option value="03:30">03:30</option><option value="04:00">04:00</option><option value="04:30">04:30</option><option value="05:00">05:00</option><option value="05:30">05:30</option><option value="06:00">06:00</option><option value="06:30">06:30</option><option value="07:00">07:00</option><option value="07:30">07:30</option><option value="08:00">08:00</option><option value="08:30">08:30</option><option value="09:00">09:00</option><option value="09:30">09:30</option><option value="10:00">10:00</option><option value="10:30">10:30</option><option value="11:00">11:00</option><option value="11:30">11:30</option><option value="12:00">12:00</option><option value="12:30">12:30</option><option value="13:00">13:00</option><option value="13:30">13:30</option><option selected="selected" value="14:00">14:00</option><option value="14:30">14:30</option><option value="15:00">15:00</option><option value="15:30">15:30</option><option value="16:00">16:00</option><option value="16:30">16:30</option><option value="17:00">17:00</option><option value="17:30">17:30</option><option value="18:00">18:00</option><option value="18:30">18:30</option><option value="19:00">19:00</option><option value="19:30">19:30</option><option value="20:00">20:00</option><option value="20:30">20:30</option><option value="21:00">21:00</option><option value="21:30">21:30</option><option value="22:00">22:00</option><option value="22:30">22:30</option><option value="23:00">23:00</option><option value="23:30">23:30</option></select>
-      </label></div>
+        <label for="datoreturn">Tilbakelevering</label>
+        <input class="datoinput" type="text" title="leveringsdato" id="date" name="datoreturn" placeholder="Leveres tilbake (dato)">
+        <select class="input-for-date" title="klokkeslett" name="pickupTime"><option value="00:00">00:00</option><option value="00:30">00:30</option><option value="01:00">01:00</option><option value="01:30">01:30</option><option value="02:00">02:00</option><option value="02:30">02:30</option><option value="03:00">03:00</option><option value="03:30">03:30</option><option value="04:00">04:00</option><option value="04:30">04:30</option><option value="05:00">05:00</option><option value="05:30">05:30</option><option value="06:00">06:00</option><option value="06:30">06:30</option><option value="07:00">07:00</option><option value="07:30">07:30</option><option value="08:00">08:00</option><option value="08:30">08:30</option><option value="09:00">09:00</option><option value="09:30">09:30</option><option value="10:00">10:00</option><option value="10:30">10:30</option><option value="11:00">11:00</option><option value="11:30">11:30</option><option value="12:00">12:00</option><option value="12:30">12:30</option><option value="13:00">13:00</option><option value="13:30">13:30</option><option selected="selected" value="14:00">14:00</option><option value="14:30">14:30</option><option value="15:00">15:00</option><option value="15:30">15:30</option><option value="16:00">16:00</option><option value="16:30">16:30</option><option value="17:00">17:00</option><option value="17:30">17:30</option><option value="18:00">18:00</option><option value="18:30">18:30</option><option value="19:00">19:00</option><option value="19:30">19:30</option><option value="20:00">20:00</option><option value="20:30">20:30</option><option value="21:00">21:00</option><option value="21:30">21:30</option><option value="22:00">22:00</option><option value="22:30">22:30</option><option value="23:00">23:00</option><option value="23:30">23:30</option></select>
+      </div>
       <label for="Bil">Biltype</label>
       <select id="Bil" name="Bil">
         <option id="A"value="A">Klasse A</option>
